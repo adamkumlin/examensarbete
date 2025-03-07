@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDaGFyYWN0ZXJDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/adam/Documents/GitHub/examensarbete/Blazor/Components/CharacterDetailsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDaGFyYWN0ZXJEZXRhaWxzQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/adam/Documents/GitHub/examensarbete/Blazor/Components/CharacterList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDaGFyYWN0ZXJMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,21 @@
+@using Blazor.Data
+@rendermode InteractiveServer
+
+<h2>@character.Name</h2>
+<p>@character.HeightCm cm</p>
+<p>@character.MassKg kg</p>
+<p>Born in @character.BirthYear</p>
+<button @onclick="@unsetFocusedCharacter">Go back</button>
+
+@code {
+    [Parameter]
+    public required Character character { get; set; }
+
+    [Parameter]
+    public required EventCallback unsetFocusedCharacter { get; set; }
+
+    private async Task handleUnsetFocusedCharacter()
+    {
+        await unsetFocusedCharacter.InvokeAsync();
+    }
+}
