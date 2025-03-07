@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adamkumlin\\Documents\\GitHub\\Examensarbete\\Blazor\\Blazor.csproj": {}
+    "C:\\Users\\adam\\Documents\\GitHub\\examensarbete\\Blazor\\Blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adamkumlin\\Documents\\GitHub\\Examensarbete\\Blazor\\Blazor.csproj": {
+    "C:\\Users\\adam\\Documents\\GitHub\\examensarbete\\Blazor\\Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adamkumlin\\Documents\\GitHub\\Examensarbete\\Blazor\\Blazor.csproj",
+        "projectUniqueName": "C:\\Users\\adam\\Documents\\GitHub\\examensarbete\\Blazor\\Blazor.csproj",
         "projectName": "Blazor",
-        "projectPath": "C:\\Users\\adamkumlin\\Documents\\GitHub\\Examensarbete\\Blazor\\Blazor.csproj",
-        "packagesPath": "C:\\Users\\adamkumlin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adamkumlin\\Documents\\GitHub\\Examensarbete\\Blazor\\obj\\",
+        "projectPath": "C:\\Users\\adam\\Documents\\GitHub\\examensarbete\\Blazor\\Blazor.csproj",
+        "packagesPath": "C:\\Users\\adam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam\\Documents\\GitHub\\examensarbete\\Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adamkumlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

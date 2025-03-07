@@ -1,0 +1,17 @@
+@rendermode InteractiveServer
+
+<h2>@label counter</h2>
+<p>@amount</p>
+<button type="button" @onclick="() => IncreaseCounter()">Increase</button>
+
+@code {
+    [Parameter]
+    public string label {get; set;} = "";
+
+    public int amount {get; set;} = 0;
+
+    public void IncreaseCounter() 
+    {
+        this.amount += 1;
+    }
+}
