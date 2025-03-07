@@ -1,0 +1,11 @@
+@using Blazor.Data
+
+<h2>@character.Name</h2>
+<p>@character.HeightCm cm</p>
+<p>@character.MassKg kg</p>
+<p>Born in @character.BirthYear</p>
+
+@code {
+    [Parameter]
+    public required Character character { get; set; }
+}

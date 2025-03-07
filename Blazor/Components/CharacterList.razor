@@ -1,0 +1,38 @@
+@inject IHttpClientFactory HttpClientFactory
+@using Blazor.Data
+@using System.Text.Json
+
+<div>
+    @if (characters.Any())
+    {
+        @foreach (Character character in characters)
+        {
+            <CharacterCard character="character" />
+        }
+    }
+    else
+    {
+        <h2>No characters found.</h2>
+    }
+</div>
+
+@code {
+    public IEnumerable<Character> characters { get; set; } = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://swapi.dev/api/people");
+        var httpClient = HttpClientFactory.CreateClient();
+        var response = await httpClient.SendAsync(request);
+
+        // Return exception if response is not successful
+        response.EnsureSuccessStatusCode();
+
+        // Parse json as string
+        string jsonResponse = await response.Content.ReadAsStringAsync();
+
+        characters = JsonSerializer.Deserialize<ApiResponse>(jsonResponse, new
+        JsonSerializerOptions
+        { PropertyNameCaseInsensitive = true }).Results;
+    }
+}
