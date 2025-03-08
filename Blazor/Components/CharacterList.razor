@@ -2,18 +2,19 @@
 @using Blazor.Data
 @using System.Text.Json
 @using Blazor.Components
+@rendermode InteractiveServer
 
 <div>
     @if (characters.Any() && focusedCharacter is null)
     {
         @foreach (Character character in characters)
         {
-            <CharacterCard character="character" setFocusedCharacter="setFocusedCharacter" />
+            <CharacterCard character="character" onStateChange="setFocusedCharacter" />
         }
     }
     else if (focusedCharacter is not null)
     {
-        <CharacterDetailsCard character="@focusedCharacter" unsetFocusedCharacter="unsetFocusedCharacter" />
+        <CharacterDetailsCard character="focusedCharacter" onStateChange="unsetFocusedCharacter" />
     }
     else
     {
@@ -44,14 +45,11 @@
 
     private void setFocusedCharacter(Character character)
     {
-        Console.WriteLine(character);
         focusedCharacter = character;
-        StateHasChanged();
     }
 
     private void unsetFocusedCharacter()
     {
         focusedCharacter = null;
-        StateHasChanged();
     }
 }

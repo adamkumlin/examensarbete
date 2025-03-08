@@ -5,17 +5,17 @@
 <p>@character.HeightCm cm</p>
 <p>@character.MassKg kg</p>
 <p>Born in @character.BirthYear</p>
-<button @onclick="@unsetFocusedCharacter">Go back</button>
+<button @onclick="changeState">Go back</button>
 
 @code {
     [Parameter]
     public required Character character { get; set; }
 
     [Parameter]
-    public required EventCallback unsetFocusedCharacter { get; set; }
+    public required EventCallback<object> onStateChange { get; set; }
 
-    private async Task handleUnsetFocusedCharacter()
+    private async Task changeState()
     {
-        await unsetFocusedCharacter.InvokeAsync();
+        await onStateChange.InvokeAsync();
     }
 }

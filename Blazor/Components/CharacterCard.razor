@@ -2,16 +2,17 @@
 @rendermode InteractiveServer
 
 <h2>@character.Name</h2>
-<button @onclick="() => handleSetFocusedCharacter()">Learn more</button>
+<button @onclick="changeState">Learn more</button>
 
 @code {
     [Parameter]
     public required Character character { get; set; }
 
     [Parameter]
-    public required EventCallback<Character> setFocusedCharacter {get; set;}
+    public required EventCallback<Character> onStateChange {get; set;}
 
-    public async Task handleSetFocusedCharacter() {
-        await setFocusedCharacter.InvokeAsync();
+    public async Task changeState() {
+        Console.WriteLine(character.Name);
+        await onStateChange.InvokeAsync(character);
     }
 }
