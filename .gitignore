@@ -31,7 +31,7 @@ bld/
 
 # Visual Studo 2015 cache/options directory
 Blazor/.vs
-
+.next
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
